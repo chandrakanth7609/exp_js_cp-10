@@ -1,0 +1,44 @@
+
+### API 1
+POST http://localhost:3000/login/
+Content-Type: application/json
+
+{
+  "username": "christopher_phillips",
+  "password": "christy@123"
+}
+
+###API 2
+GET http://localhost:3000/states/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImNocmlzdG9waGVyX3BoaWxsaXBzIiwiaWF0IjoxNzA1NDc0MTc5fQ.umGmiYr4xvQyKE-AzdCacyEIYvEKCnSsCLkw0v5gZHA 
+
+### API 3
+GET http://localhost:3000/states/33/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImNocmlzdG9waGVyX3BoaWxsaXBzIiwiaWF0IjoxNzA1NDc0MTc5fQ.umGmiYr4xvQyKE-AzdCacyEIYvEKCnSsCLkw0v5gZHA 
+
+### API 4
+POST http://localhost:3000/districts/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImNocmlzdG9waGVyX3BoaWxsaXBzIiwiaWF0IjoxNzA1NDc0MTc5fQ.umGmiYr4xvQyKE-AzdCacyEIYvEKCnSsCLkw0v5gZHA 
+Content-Type: application/json
+
+{
+  "districtId": 322,
+  "districtName": "Palakkad",
+  "stateId": 17,
+  "cases": 61558,
+  "cured": 59276,
+  "active": 2095,
+  "deaths": 177
+}
+
+### API 5
+GET http://localhost:3000/districts/320/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImNocmlzdG9waGVyX3BoaWxsaXBzIiwiaWF0IjoxNzA1NDc0MTc5fQ.umGmiYr4xvQyKE-AzdCacyEIYvEKCnSsCLkw0v5gZHA 
+
+### API 6 
+DELETE http://localhost:3000/districts/322/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImNocmlzdG9waGVyX3BoaWxsaXBzIiwiaWF0IjoxNzA1NDc0MTc5fQ.umGmiYr4xvQyKE-AzdCacyEIYvEKCnSsCLkw0v5gZHA 
+
+### API 7
+GET http://localhost:3000/states/33/stats/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImNocmlzdG9waGVyX3BoaWxsaXBzIiwiaWF0IjoxNzA1NDc0MTc5fQ.umGmiYr4xvQyKE-AzdCacyEIYvEKCnSsCLkw0v5gZHA 
